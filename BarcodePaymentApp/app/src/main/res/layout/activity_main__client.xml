@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main__client"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+
+    tools:context="com.mathacollege.barcodepaymentapp.activities.Main_ClientActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.mathacollege.barcodepaymentapp.fragments.ViewproductFragment">
+
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:id="@+id/imgbtn_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@android:drawable/ic_menu_camera" />
+
+
+            <TextView
+                android:id="@+id/txt_totalprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/activity_horizontal_margin"
+
+
+                />
+
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_product"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            android:layout_below="@+id/layout"
+
+            android:scrollbars="none">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:layout_gravity="bottom">
+
+
+            <!--<com.digits.sdk.android.DigitsAuthButton-->
+                <!--android:id="@+id/button_buynow"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="buy now"/>-->
+            <Button
+                android:id="@+id/button_buynow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="buy now"/>
+
+
+            <Button
+                android:id="@+id/button_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/black"
+                android:text="Log out"
+                android:textAllCaps="false" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

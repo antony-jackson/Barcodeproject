@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="com.mathacollege.barcodepaymentapp.fragments.AddproductFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+            >
+
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_margin="10dp"
+        android:id="@+id/editText_productname"
+        android:hint="product name" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_margin="10dp"
+        android:id="@+id/editText_vendor"
+        android:hint="vender name" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_margin="10dp"
+        android:id="@+id/editText_price"
+        android:hint="price" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_margin="10dp"
+        android:id="@+id/editText_offer"
+        android:hint="offer in %" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_margin="10dp"
+        android:id="@+id/editText_actualprice"
+        android:hint="actualprice" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_weight="0.2"
+        android:id="@+id/editText_barcode"
+        android:hint="barcode" />
+
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:background="@android:color/transparent"
+            app:srcCompat="@android:drawable/ic_menu_camera"
+            android:id="@+id/imageButton_camera" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:text="add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_add"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,141 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="com.mathacollege.barcodepaymentapp.fragments.AddproductFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="18dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_alignParentLeft="true"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@drawable/view" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@drawable/logout" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/editText_productname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="product name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editText_vendor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="vender name"
+                android:inputType="textPersonName" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editText_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.5"
+                    android:ems="10"
+                    android:hint="price"
+                    android:inputType="numberDecimal" />
+
+                <EditText
+                    android:id="@+id/editText_offer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.5"
+                    android:ems="10"
+                    android:hint="offer in %"
+                    android:inputType="numberDecimal" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editText_actualprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="actualprice"
+                android:inputType="numberDecimal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editText_barcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:hint="barcode"
+                    android:inputType="textPersonName" />
+
+
+                <ImageButton
+                    android:id="@+id/imageButton_camera"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@android:drawable/ic_menu_camera" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:background="@color/colorPrimary"
+                android:text="add"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
